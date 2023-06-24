@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shopping Website</title>
+</head>
+<body class = "m-0">
+
+    <!-- Navbar-Section -->
+    <nav class="mx-auto max-w-7xl lg:px-8 sm:px-6 px-4">
+        <div class="border-b border-gray-200">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex flex-1 items-center lg:hidden">
+                    <button class="-ml-2 rounded-md bg-white p-2 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
+                    </button>
+                    <a href="#" class="ml-2 p-2 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path></svg>
+                    </a>
+                </div>
+                <div class="hidden lg:block lg:flex-1 lg:self-stretch">
+                    <div class="flex h-full space-x-8">
+                        <button class="font-medium text-sm text-gray-700">Women</button>
+                        <button class="font-medium text-sm text-gray-700">Men</button>
+                        <button class="font-medium text-sm text-gray-700">Company</button>
+                        <button class="font-medium text-sm text-gray-700">Stores</button>
+                    </div>
+                </div>
+                <a href="#" class="flex">
+                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="tailwind logo">
+                </a>
+                <div class="flex flex-1 items-center justify-end ">
+                    <a href="#" class="hidden lg:flex lg:items-center text-gray-700">
+                        <img src="https://tailwindui.com/img/flags/flag-canada.svg" alt="flag of CANADA" class="block h-auto w-5 flex-shrink-0">
+                        <span class="block ml-3 font-medium text-sm">CAD</span>
+                    </a>
+                    <a href="#" class="hidden lg:block ml-6 p-2 text-gray-400 hover:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+                        </svg>              
+                    </a>
+                    <a href="#" class="lg:ml-4 p-2 text-gray-400 hover:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path>
+                        </svg>              
+                    </a>
+                    <div class="ml-4 lg:ml-6 flow-root">
+                        <a href="#" class="-m-2 p-2 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-6 flex-shrink-0 text-gray-400 hover:text-gray-700">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path>
+                            </svg>
+                            <span>0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main-Section -->
+    <main class="mx-auto max-w-7xl lg:px-8 sm:px-6 sm:pt-16">
+        <div class="lg:max-w-none max-w-2xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+
+                <!-- Images-Section -->
+                <div>
+                    <div class="w-full">
+                        <img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg" alt="Zip tote basket" class="sm:rounded-lg">
+                    </div>
+                    <div class="mt-6 mx-auto w-full lg:max-w-none max-w-2xl hidden sm:block">
+                        <div class="grid grid-cols-4 gap-6">
+                            <button class="h-24 relative flex items-center justify-center rounded-md bg-white text-gray-900">
+                                <span class="absolute inset-0 overflow-hidden rounded-md">
+                                    <img class="h-full w-full object-cover object-center" src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg" alt="Zip tote basket ">
+                                </span>
+                                <span class="absolute inset-0 rounded-md ring ring-offset-2 ring-indigo-500">
+                                </span>
+                            </button>
+                            <button class="h-24 relative flex items-center justify-center rounded-md bg-white text-gray-900">
+                                <span class="absolute inset-0 overflow-hidden rounded-md">
+                                    <img class="h-full w-full object-cover object-center" src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-02.jpg" alt="Zip tote basket ">
+                                </span>
+                            </button>
+                            <button class="h-24 relative flex items-center justify-center rounded-md bg-white text-gray-900">
+                                <span class="absolute inset-0 overflow-hidden rounded-md">
+                                    <img class="h-full w-full object-cover object-center" src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-03.jpg" alt="Zip tote basket ">
+                                </span>
+                            </button>
+                            <button class="h-24 relative flex items-center justify-center rounded-md bg-white text-gray-900">
+                                <span class="absolute inset-0 overflow-hidden rounded-md">
+                                    <img class="h-full w-full object-cover object-center" src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-04.jpg" alt="Zip tote basket ">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description-Section -->
+                <div class="mt-10 sm:mt-16 lg:mt-0 px-4 sm:px-0">
+                    <h1 class="text-3xl font-bold text-gray-900 tracking-tight">Zip Tote Basket</h1>
+                    <div class="mt-3">
+                        <p class="text-3xl text-gray-900 tracking-tight">$140</p>
+                    </div>
+                    <div class="flex mt-3 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-indigo-500 flex-shrink-0">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-indigo-500 flex-shrink-0">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-indigo-500 flex-shrink-0">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-indigo-500 flex-shrink-0">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-gray-300 flex-shrink-0">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="mt-6 text-gray-700">
+                        <p >The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+                    </div>
+
+                    <div class="mt-6 text-gray-700">
+                        <span>Color</span>
+                        <div class="mt-2 flex">
+                            <div class="flex ring ring-gray-700 p-0.5 rounded-full cursor-pointer">
+                                <span class="w-8 h-8 bg-gray-700 border border-black border-opacity-10 rounded-full"></span>
+                            </div>
+                            <span class="w-8 h-8 bg-white border border-black border-opacity-10 rounded-full ml-3 cursor-pointer"></span>
+                            <span class="w-8 h-8 bg-gray-500 border border-black border-opacity-10 rounded-full ml-3 cursor-pointer"></span>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <button class="w-full max-w-xs px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white border border-transparent rounded-md text-base font-medium">Add to bag</button>
+                        <button class="ml-4 px-3 py-3 text-gray-400 hover:bg-gray-100 rounded-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-6 flex-shrink-0">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+                              </svg>                              
+                        </button>
+                    </div>
+
+                    <div class="mt-12">
+                        <div class="border-t">
+                            <button class="w-full py-6 flex justify-between items-center ">
+                                <span class="text-sm font-medium text-gray-900">Features</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-400">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                                      </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="border-t">
+                            <button class="w-full py-6 flex justify-between items-center ">
+                                <span class="text-sm font-medium text-gray-900">Care</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-400">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                                      </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="border-t">
+                            <button class="w-full py-6 flex justify-between items-center ">
+                                <span class="text-sm font-medium text-gray-900">Shipping</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-400">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                                      </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="border-t">
+                            <button class="w-full py-6 flex justify-between items-center ">
+                                <span class="text-sm font-medium text-gray-900">Returns</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 text-gray-400">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                                      </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Items Section -->
+        <section class="mt-10 border-t border-gray-200 py-16 px-4 sm:px-0">
+            <h2 class="text-xl font-bold text-gray-900">Customers also bought</h2>
+            <div class="mt-8 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-y-12 xl:gap-x-8 sm:gap-x-6">
+                <div class="relative">
+                    <div class="w-full h-72 rounded-lg">
+                        <img src="https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg" 
+                        alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-sm text-gray-900 font-medium">Zip Tote Basket</h3>
+                        <p class="mt-1 text-sm text-gray-500">White and black</p>
+                    </div>
+                    <div class="absolute top-0 inset-x-0 h-72 flex justify-end items-end rounded-lg p-4 overflow-hidden">
+                        <div class="absolute bottom-0 inset-x-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
+                        <p class="relative text-xl font-semibold text-white">$140</p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="flex items-center justify-center border border-transparent rounded-md bg-gray-100 hover:bg-gray-300 px-8 py-2 text-sm font-medium text-gray-900 ">Add to Bag</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-72 rounded-lg">
+                        <img src="https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-02.jpg" 
+                        alt="Front of zip tote bag with white canvas, blue canvas straps and handle, and front zipper pocket." class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-sm text-gray-900 font-medium">Zip High Wall Tote</h3>
+                        <p class="mt-1 text-sm text-gray-500">White and blue</p>
+                    </div>
+                    <div class="absolute top-0 inset-x-0 h-72 flex justify-end items-end rounded-lg p-4 overflow-hidden">
+                        <div class="absolute bottom-0 inset-x-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
+                        <p class="relative text-xl font-semibold text-white">$140</p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="flex items-center justify-center border border-transparent rounded-md bg-gray-100 hover:bg-gray-200 px-8 py-2 text-sm font-medium text-gray-900 ">Add to Bag</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-72 rounded-lg">
+                        <img src="https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-03.jpg" 
+                        alt="Front of tote with monochrome natural canvas body, straps, roll top, and handles." class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-sm text-gray-900 font-medium">Halfsize Tote</h3>
+                        <p class="mt-1 text-sm text-gray-500">Clay</p>
+                    </div>
+                    <div class="absolute top-0 inset-x-0 h-72 flex justify-end items-end rounded-lg p-4 overflow-hidden">
+                        <div class="absolute bottom-0 inset-x-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
+                        <p class="relative text-xl font-semibold text-white">$140</p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="flex items-center justify-center border border-transparent rounded-md bg-gray-100 hover:bg-gray-200 px-8 py-2 text-sm font-medium text-gray-900 ">Add to Bag</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-72 rounded-lg">
+                        <img src="https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-04.jpg" 
+                        alt="Front of zip tote bag with black canvas, black handles, and orange drawstring top." class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-sm text-gray-900 font-medium">High Wall Tote</h3>
+                        <p class="mt-1 text-sm text-gray-500">Black and orange</p>
+                    </div>
+                    <div class="absolute top-0 inset-x-0 h-72 flex justify-end items-end rounded-lg p-4 overflow-hidden">
+                        <div class="absolute bottom-0 inset-x-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
+                        <p class="relative text-xl font-semibold text-white">$140</p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="flex items-center justify-center border border-transparent rounded-md bg-gray-100 hover:bg-gray-200 px-8 py-2 text-sm font-medium text-gray-900 ">Add to Bag</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer-Section -->
+    <footer>
+        <div class="mx-auto max-w-7xl lg:px-8 sm:px-6 px-4">
+            <div class="border-t border-gray-200 py-20">
+                <div class="md:grid md:grid-cols-12 grid-cols-1 md:gap-x-8 md:gap-y-16 md:auto-rows-min md:grid-flow-col">
+                    <div class="col-span-1 md:col-span-2 lg:col-start-1 lg:row-start-1">
+                        <img src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=600" alt="" class="w-auto h-8">
+                    </div>
+                    <div class="grid col-span-6 md:col-span-8 lg:col-span-6 mt-10 md:mt-0 grid-cols-2 sm:grid-cols-3 gap-8 md:col-start-3 md:row-start-1 lg:col-start-2">
+                        <div class="grid sm:col-span-2 grid-cols-1 sm:grid-cols-2 sm:gap-x-8 gap-y-12">
+                            <div>
+                                <h3 class="text-sm text-gray-900 font-medium">Products</h3>
+                                <ul class="mt-6 space-y-6">
+                                    <li class="text-sm"><a href="#" class="text-gray-500">Bags</a></li>
+                                    <li class="text-sm"><a href="#" class="text-gray-500">Tees</a></li>
+                                    <li class="text-sm"><a href="#" class="text-gray-500">Objects</a></li>
+                                    <li class="text-sm"><a href="#" class="text-gray-500">Home Goods</a></li>
+                                    <li class="text-sm"><a href="#" class="text-gray-500">Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-sm text-gray-900 font-medium">Company</h3>
+                                <ul class="mt-6 space-y-6">
+                                    <li class="text-sm"><a href="#" class="text-gray-500">Who we are</a></li>
+                                    <li class="text-sm"><a href="#" class="text-gray-500">Press</a></li>
+                                    <li class="text-sm"><a href="#" class="text-gray-500">Careers</a></li>
+                                    <li class="text-sm"><a href="#" class="text-gray-500">Terms & Conditions</a></li>
+                                    <li class="text-sm"><a href="#" class="text-gray-500">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-sm text-gray-900 font-medium">Customer Service</h3>
+                            <ul class="mt-6 space-y-6">
+                                <li class="text-sm"><a href="#" class="text-gray-500">Contact</a></li>
+                                <li class="text-sm"><a href="#" class="text-gray-500">Shipping</a></li>
+                                <li class="text-sm"><a href="#" class="text-gray-500">Returns</a></li>
+                                <li class="text-sm"><a href="#" class="text-gray-500">Warranty</a></li>
+                                <li class="text-sm"><a href="#" class="text-gray-500">Secure Payments</a></li>
+                                <li class="text-sm"><a href="#" class="text-gray-500">FAQ</a></li>
+                                <li class="text-sm"><a href="#" class="text-gray-500">Find a store</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-12 md:mt-0 md:col-span-8 lg:col-span-4 md:col-start-3 lg:col-start-9 md:row-start-2 lg:row-start-1">
+                        <h3 class="text-sm text-gray-900 font-medium">Sign up for our newsletter</h3>
+                        <p class="mt-6 text-sm text-gray-500">The latest deals and savings, sent to your inbox weekly.</p>
+                        <form class="mt-2 flex max-w-md">
+                            <label for="email-address" class="hidden">Email address</label>
+                            <input id="email-address" type="text" autocomplete="email" required="" class="w-full min-w-0 appearance-none border border-gray-300 rounded-md bg-white px-4 py-2 text-base text-gray-900 shadow-sm">
+                            <div class="ml-4 flex-shrink-0">
+                                <button class="w-full px-4 py-2 flex items-center justify-center border border-transparent rounded-md bg-indigo-600 hover:bg-indigo-700 text-base text-white font-medium shadow-sm">Sign up</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-100 py-10 text-center">
+                <p class="text-sm text-gray-500">© 2021 Your Company, Inc. All rights reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
